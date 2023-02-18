@@ -15,7 +15,27 @@ public class HlavniProgram {
 
         nakresliPrasatkoSOcaskem();
 
-        
+        zofka.penUp();
+        zofka.turnRight(135);
+        zofka.move(420);
+        zofka.penDown();
+
+        nakresliOsmiuhelnik();
+
+        zofka.penUp();
+        zofka.move(300);
+        zofka.penDown();
+
+        nakresliKruh();
+
+        zofka.penUp();
+        zofka.move(300);
+        zofka.penDown();
+
+        nakresliSlunce();
+
+
+
 
 
 
