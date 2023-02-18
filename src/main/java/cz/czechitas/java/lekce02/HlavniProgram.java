@@ -7,45 +7,34 @@ public class HlavniProgram {
     public void start() {
         zofka = new Turtle();
 
-        nakresliDOmecek();
-
-        zofka.turnRight(135);
-        zofka.penUp();
-        zofka.move(600);
-        zofka.penDown();
-
-
-        zofka.turnRight(180);
-
-        nakresliPrasatko();
+       nakresliPrasatkoSOcaskem();
 
 
     }
 
-    private void nakresliPrasatko() {
+    private void nakresliPrasatkoSOcaskem() {
+        zofka.turnRight(90);
         nakresliDOmecek();
         zofka.turnRight(45);
-        zofka.move(200);
-        nakresliZdaniNohu();
-        zofka.turnRight(135);
+        nakresliNohu();
+        zofka.turnLeft(45);
         zofka.penUp();
         zofka.move(200);
-        nakresliPredniNohu();
-    }
-
-    private void nakresliPredniNohu() {
         zofka.penDown();
+        nakresliNohu();
         zofka.turnRight(45);
-        zofka.move(50);
-        zofka.turnLeft(180);
-        zofka.move(50);
-        zofka.turnLeft(90);
-        zofka.move(50);
-        zofka.turnLeft(180);
+        zofka.penUp();
+        zofka.move(200);
+        zofka.penDown();
+        zofka.turnLeft(45);
+        zofka.penDown();
         zofka.move(50);
     }
 
-    private void nakresliZdaniNohu() {
+
+
+
+    private void nakresliNohu() {
         zofka.turnLeft(45);
         zofka.move(50);
         zofka.turnRight(180);
