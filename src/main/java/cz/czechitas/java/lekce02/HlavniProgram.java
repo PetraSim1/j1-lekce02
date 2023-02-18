@@ -7,9 +7,48 @@ public class HlavniProgram {
     public void start() {
         zofka = new Turtle();
 
-       nakresliPrasatkoSOcaskem();
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.move(500);
+        zofka.turnRight(90);
+        zofka.penDown();
+
+        nakresliPrasatkoSOcaskem();
+
+        
 
 
+
+
+    }
+
+    private void nakresliSlunce() {
+        for (int i = 0; i < 12; i++) {
+
+            for (int j = 0; j <30; j++) {
+                zofka.move(2);
+                zofka.turnRight(1);
+            }
+            zofka.turnLeft(90);
+            zofka.move(50);
+            zofka.turnRight(180);
+            zofka.move(50);
+            zofka.turnLeft(90);
+        }
+    }
+
+    private void nakresliKruh() {
+        for (int i = 0; i < 360; i++) {
+            zofka.move(2);
+            zofka.turnRight(1);
+        }
+    }
+
+    private void nakresliOsmiuhelnik() {
+        for (int i = 0; i <8; i++) {
+            zofka.move(100);
+            zofka.turnRight(45);
+        }
     }
 
     private void nakresliPrasatkoSOcaskem() {
